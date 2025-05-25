@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding a teacher</title>
+</head>
+<body>
+<h1>Fill in the form</h1>
+<form>
+    <p>
+        <label>Full name</label>
+        <input type="text" name="full_name" placeholder="ПІБ" required>
+    </p>
+
+    <fieldset>
+        <legend>Gender</legend>
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+    </fieldset>
+
+    <p>
+        <label for="birthdate">Date of Birth</label>
+    <input type="date" name="date_of_birth" id="birthdate">
+    </p>
+
+
+    <p>
+        <label>Email</label>
+    <input type="email" name="email" required>
+    </p>
+
+
+    <p>
+        <label>Phone number</label>
+        <input type="tel" name="phone_number" placeholder="098-714-5042" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    </p>
+
+    <p>
+        <label>Desired background color</label>
+        <input type="color" name="background_color" required>
+    </p>
+
+    <p>
+        <label>Country</label>
+        <input type="text" list="country-list" name="country" required>
+        <datalist id="country-list">
+            <option value="Україна">Україна</option>
+            <option value="США">США</option>
+            <option value="Німеччина"> Німеччина </option>
+            <option value ="Словаччина"> Словаччина </option>
+            <option value = "Угорщина"> Угорщина </option>
+        </datalist>
+    </p>
+
+    <p>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required>
+    </p>
+
+    <p>
+        <label for="comment">Comment</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+    </p>
+
+    <p>
+        <button type="submit">Add teacher</button>
+    </p>
+</form>
+</body>
+</html>
